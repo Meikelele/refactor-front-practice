@@ -47,12 +47,7 @@ modeSwitch.onchange = (event) => {
         const url = checked ? "/valveOn" : "/valveOff";
         fetch(url).catch((e) => console.error(e));
     };
-
-
-
-
-
-
+    
     // tankLevel1.classList.add("filled");
 
 
