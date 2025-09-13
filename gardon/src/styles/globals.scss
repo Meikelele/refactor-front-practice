@@ -4,10 +4,21 @@ html,
 body,
 #root {
   height: 100%;
-}
-body {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "JetBrains Mono", "Fira Code", "monospace";
   color: var(--color-text);
   background: linear-gradient(180deg, #ecfdf5 0%, var(--color-bg) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mantine-Title-root,
+.mantine-Text-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }

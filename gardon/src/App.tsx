@@ -1,14 +1,8 @@
-import styles from './App.module.scss';
+import ModeHeader from './features/mode/ModeHeader';
 
-function App() {
+export default function App() {
+
   return (
-    <div className={styles.wrapper}>
-      <h1>GardOn</h1>
-      <section className={styles.card}>
-        <p>Setup OK — React + TS + SCSS</p>
-      </section>
-    </div>
+    <ModeHeader />
   );
 }
-
-export default App;
