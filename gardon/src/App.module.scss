@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
