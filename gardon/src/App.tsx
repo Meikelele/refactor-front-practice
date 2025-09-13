@@ -5,7 +5,7 @@ function App() {
     <div className={styles.wrapper}>
       <h1>GardOn</h1>
       <section className={styles.card}>
-        <p>Setup OK — React + TS + SCSS (modules)</p>
+        <p>Setup OK — React + TS + SCSS</p>
       </section>
     </div>
   );
