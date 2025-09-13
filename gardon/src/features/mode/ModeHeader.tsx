@@ -1,22 +1,21 @@
-// import { Stack } from "@mantine/core";
-import { Title, Text, Container, Group } from "@mantine/core";
 import "./ModeHeader.scss"
-import ModeSwitch from "../../components/ui/ModeSwitch/ModeSwitch";
+import { Title, Text, Group, Switch, Box } from "@mantine/core";
+// import ModeSwitch from "../../components/ui/ModeSwitch/ModeSwitch";
 
 export function ModeHeader() {  
 return (
-    <Container className="modeHeader__container">
-        <Container>
+    <Box className="modeHeader__container">
+        <Box>
             <Group className="modeHeader__container__header">
                 <Title>GardOn</Title>
                 {/* TODO: przerobic na wlasna wersje tego switcha*/}
-                <ModeSwitch />
+                <Switch size="xs" onLabel="ON" offLabel="OFF"/>
             </Group>
-        </Container>
-        <Container>
+        </Box>
+        <Box>
             <Text>Solution for your garden</Text>
-        </Container>
-    </Container>
+        </Box>
+    </Box>
 );
 }
 

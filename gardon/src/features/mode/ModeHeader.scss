@@ -1,6 +1,9 @@
 .modeHeader__container {
-  margin: 0;
-  padding: 0;
+  background-color: whitesmoke;
+  padding: 0.5em;
+  border-radius: 8px;
+
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
