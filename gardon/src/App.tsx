@@ -1,13 +1,13 @@
-import { Container } from '@mantine/core';
 import ModeHeader from './features/mode/ModeHeader';
 import ScheduleSection from './features/schedule/ScheduleSection';
+// import StatusSection from './features/status/StatusSection';
 
 export default function App() {
 
   return (
-    <Container>
+    <div>
       <ModeHeader />
       <ScheduleSection />
-    </Container>
+    </div>
   );
 }
