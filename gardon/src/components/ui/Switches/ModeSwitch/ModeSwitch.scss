@@ -13,10 +13,6 @@
   outline: none;
   position: relative;
 
-  &:focus {
-    box-shadow: 0 0 0 2px #60a5fa;
-  }
-
   &__thumb {
     position: absolute;
     top: 4px;
