@@ -1,0 +1,20 @@
+.days-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.day-pill.p-button {
+  border: 0;
+  border-radius: 9999px;
+  font-weight: 800;
+  background: lightgray;
+  color: var(--color-text);
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.day-pill.p-button.p-highlight {
+  background: var(--color-brand);
+  color: #fff;
+}
