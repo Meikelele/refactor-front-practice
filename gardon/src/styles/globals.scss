@@ -1,9 +1,23 @@
-@import "./tokens";
+:root {
+  --color-bg: #f6f9f7;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-brand: #059669;
+  --radius: 16px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
 
 html,
 body,
 #root {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
   margin: 0;
   padding: 0;
 }
@@ -16,9 +30,4 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.mantine-Title-root,
-.mantine-Text-root {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }
