@@ -1,22 +1,21 @@
+import { useState } from "react";
+import ModeSwitch from "../../components/ui/Switches/ModeSwitch/ModeSwitch";
 import "./ModeHeader.scss"
-import { Title, Text, Group, Switch, Box } from "@mantine/core";
-// import ModeSwitch from "../../components/ui/ModeSwitch/ModeSwitch";
 
-export function ModeHeader() {  
+export default function ModeHeader() {  
+const [scheduleMode, setScheduleMode] = useState(true);
+
 return (
-    <Box className="modeHeader__container">
-        <Box>
-            <Group className="modeHeader__container__header">
-                <Title>GardOn</Title>
-                {/* TODO: przerobic na wlasna wersje tego switcha*/}
-                <Switch size="xs" onLabel="ON" offLabel="OFF"/>
-            </Group>
-        </Box>
-        <Box>
-            <Text>Solution for your garden</Text>
-        </Box>
-    </Box>
+    <div className="modeHeader__container">
+        <div>
+            <div className="modeHeader__container__header">
+                <h1>GardOn</h1>
+                <ModeSwitch checked={scheduleMode} onChange={setScheduleMode}/>
+            </div>
+        </div>
+        <div>
+            <p className="subtitle">Solution for your garden</p>
+        </div>
+    </div>
 );
 }
-
-export default ModeHeader; 
