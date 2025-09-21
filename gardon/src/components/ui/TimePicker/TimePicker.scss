@@ -1,0 +1,30 @@
+.timePicker__container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+
+  &___time__input.p-inputtext {
+    height: 40px;
+    border: 2px solid #d0d4d9;
+    border-radius: 10px;
+    background: #f7f9fb;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-variant-numeric: tabular-nums;
+    padding-right: 2.25rem;
+  }
+
+  &___time__btn.p-datepicker-trigger {
+    right: 0.35rem;
+    border-radius: 8px;
+  }
+
+  &___time__panel.p-datepicker {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+}
