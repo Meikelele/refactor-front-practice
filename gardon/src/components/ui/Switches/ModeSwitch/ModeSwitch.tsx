@@ -1,30 +1,30 @@
 import './ModeSwitch.scss';
 
 type Props = {
-  checked: boolean;
-  onChange: (checked: boolean) => void;
+  isScheduleMode: boolean;
+  setIsScheduleMode: (isScheduleMode: boolean) => void;
 }
 
-export default function ModeSwitch({checked, onChange}: Props) {
+export default function ModeSwitch({isScheduleMode, setIsScheduleMode}: Props) {
 
   return (
     <button
       type='button'
       className='modeSwitch'
-      onClick={ () => onChange(!checked)}
-      aria-pressed={checked}
+      onClick={ () => setIsScheduleMode(!isScheduleMode)}
+      aria-pressed={isScheduleMode}
     >
       <span className='modeSwitch__thumb'
         style={{
-            left: checked ? "40px" : "4px",
-            background: checked
+            left: isScheduleMode ? "40px" : "4px",
+            background: isScheduleMode
               ? "#33c476"
               : "#c04dae"
           }}
       >
         <img
-          src={checked ? "../../../../public/logoONswitch.png" : "../../../../public/logoOFFswitch.png"}
-          alt={checked ? "ON Logo" : "OFF Logo"}
+          src={isScheduleMode ? "../../../../public/logoONswitch.png" : "../../../../public/logoOFFswitch.png"}
+          alt={isScheduleMode ? "ON Logo" : "OFF Logo"}
           style={{ width: 20, height: 20 }}
         />
 
